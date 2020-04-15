@@ -1,0 +1,62 @@
+* How can publicly available data help to better understand the development of the COVID-19 CORONA VIRUS PANDEMIC?
+
+** Introduction
+
+Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the entire world into a serious health, social and economic crisis. The pandemic has spread rapidly, and is still spreading rapidly, across all countries. Most countries have closed their borders and shut down their normal societal and economic life.
+
+The Corona pandemic is omnipresent all over the world and many people are working hard to better understand 
+1) how quickly the virus spreads across countries and societies,
+2) what measures might have an impact on the infection and/or death growth rate,
+3) and what the major implications of the virus pandemic will be. 
+
+The insights resulting from such analysis could then be used by politicians to take decisions on if and how to either loosen or intensify societal and economical restrictions.
+
+Over the course of this project we will analyze the following aspects:
+
+1. Which sources of trustful data around the Corona pandemic exists?
+2. What kind of data is provided in the various sources and how can it be used to help understand, how fast the virus spreads per country?
+3. Are there significant differences between countries in how the pandemic develops? And what might be the reasons for these differences?
+4. How do the number of Corona infections and Corona deaths correlate with each other? Are there significant differences between countries?
+5. How can the implications of the Corona pandemic be measures by data?
+
+** Part I: Sources of trustful data around the Corona pandemic
+
+In order to understand the development of the pandemic, we need trustworthy data. The data should provide information on the number of new infections and new deaths per country on a daily basis. That kind of data would allow us understand the growth rate of infections as well as of deaths caused by the Corona virus.
+
+The following 
+
+*** Number of infections and deaths per country and day
+Some countries like [[https://info.gesundheitsministerium.at/][Austria]] or [[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html][Germany]] do provide official dashboards to publish the number of Corona infections and deaths. For other countries there are different sources with slightly different figures. 
+
+As we want to compare the pandemic development between different countries, it seems advisable to use a central data source which comprise data from all, or at least most countries. The World Health Organization (WHO) provides daily [[https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/][Situation Reports]] on their website. These situation reports are only available as PDF documents and thus difficult to process.
+
+Another institution that collects and provides data about the Coronavirus desease is the "[[https://www.ecdc.europa.eu/en][European Centre for Disease Prevention and Control]]" (ECDC), which is an agency of the European Union. The agency provides [[https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide][downloadable data files]], which are updated daily and contain the latest available public data on COVID-19. According to [[https://www.ecdc.europa.eu/en/copyright][ECDC's copyright policy]], the data /"may be reproduced, adapted and/or distributed, totally or in part, irrespective of the means and/or the formats used, provided that ECDC is always acknowledged as the original source of the material. Such acknowledgement must be included in each copy of the material."/. The ECDC is using the same data to produce a dashboard page called "[[https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases][Situation Update Worldwide]]".
+
+The ECDC has published its approach for collecting and processing COVID-19 data on [[https://www.ecdc.europa.eu/en/covid-19/data-collection][this page]]. 
+#+BEGIN_QUOTE
+Every day between 6.00 and 10.00 CET, a team of epidemiologists screens up to 500 relevant sources to collect the latest figures. The data screening is followed by ECDC's standard epidemic intelligence process for which every single data entry is validated and documented in an ECDC database. An extract of this database, complete with up-to-date figures and data visualisations, is then shared on the ECDC website, ensuring a maximum level of transparency.
+#+END_QUOTE 
+
+The collection and processing approach of the ECDC as well as its copyright policy seems to be appropriate for the intended data analysis. Thus we will use the ECDC data set over the course of this project.
+
+**  Part II: Analysis of the provided data and how it can be used to help understand the dynamics of the pandemic
+*** Data contained in the daily updated and downloadable ECDC data set
+The ECDC dataset can be downloaded as CSV file. For this project the data from the 14th of April have been used. A first outline does show that the dataset contains 10 columns.
+[[./images/Fig01_ECDC_dataset_outline.png]]
+**** Columns of the data set
++ dateRep: Reporting day inlcuding year and month
++ day: Reporting day
++ month: Reporting month
++ year: Reporing year
++ cases: Number of new infections over the last 24h
++ death: Number of new deaths over the last 24h
++ countriesAndTerritories: Name of the country or territory which reported the number
++ geoId: ID of the reporting country
++ countryterritoryCode: Official country code of the reporting country
++ popData2018: Size of the population of the reporting country
+
+**** Statistics of the data set
+
+
+
+

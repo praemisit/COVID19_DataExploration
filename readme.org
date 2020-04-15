@@ -1,0 +1,39 @@
+* SARS-CoV-2 Virus pandemic - Data Exploration Project
+** Foreword
+This project was developed as part of the Udacity education program "Data Scientist" and tackles the current most dominant topic of the world: The Corona crisis. 
+
+*Disclaimer: The entire project and all analysis results MUST NOT be considered as scientifically proven insights about the Corona epidemic. It is a project of an inexperienced student in Data Science and its primary purpose is to a) finalize the Udacity Data Science training program, and b) to generate some insights about the potential of publicly available data in a world-wide crisis.*
+
+
+** Installation
+
+This entire code of this project is written in Python and does use the standard libraries provided by Anaconda3 only. No further installations are required.
+
+** Motivation
+
+Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the entire world into a serious health, social and economic crisis. The pandemic has spread rapidly, and is still spreading rapidly across all countries. Most countries have closed their borders and shut down their normal social and economic life.
+
+The Corona pandemic is that omnipresent in the world, in Germany and even in my closest neighborhood, that it was obvious for me to take it as the main topic for the so called Capstone project of my Udacity Data Science training program. 
+
+The following aspects will be analyzed in more detail over the course of this project:
+
+1. Which sources of trustful data around the Corona pandemic exists?
+2. What kind of data is provided in the various sources and how can it be used to help understand, how fast the virus spreads per country?
+3. Are there significant differences between countries in how the pandemic develops? And what might be the reasons for these differences?
+4. How do the number of Corona infections and Corona deaths correlate with each other? Are there significant differences between countries?
+
+** File Description
+
+The following files belong to this project:
+
+1. readme.org: Providing a rough idea about this project.
+2. <dataset 1>: 
+3. covid19_data_exploration_project.ipynb: An Jupiter notebook file with all code and comments of the data exploration exercise
+4. A GitHub page containing the full data analysis results (=blog post)
+
+** How to interact with this project
+
+The development of the project in completed, closed and not intended for further use in other projects. The full data analysis results can be found here:
+
+** Licensing, Authors, Acknowledgements
+
