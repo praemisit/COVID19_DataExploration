@@ -1,6 +1,9 @@
 
 * How can publicly available data help to better understand the development of the COVID-19 CORONA VIRUS PANDEMIC?
 
+[[./images/SARS-CoV-2_image.png]]
+Source: [[https://commons.wikimedia.org/w/index.php?curid=86444014][CDC/ Alissa Eckert, MS; Dan Higgins, MAM]] 
+
 ** Introduction
 
 Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the entire world into a serious health, social and economic crisis. The pandemic has spread rapidly, and is still spreading rapidly, across all countries. Most countries have closed their borders and shut down their normal societal and economic life.
@@ -37,11 +40,27 @@ Every day between 6.00 and 10.00 CET, a team of epidemiologists screens up to 50
 
 The collection and processing approach of the ECDC as well as its copyright policy seems to be appropriate for the intended data analysis. Thus we will use the ECDC data set over the course of this project.
 
-**  Part II: Analysis of the provided data and how it can be used to help understand the dynamics of the pandemic
+** Part II: Analysis of the provided data and how it can be used to help understand the dynamics of the pandemic
 *** Data contained in the daily updated and downloadable ECDC data set
 The ECDC dataset can be downloaded as CSV file. For this project the data from the 14th of April have been used. A first outline does show that the dataset contains 10 columns.
 [[./images/Fig01_ECDC_dataset_outline.png]]
 **** Columns of the data set
+|-------------------------+-------------------------------------------------|
+| Column Name             | Description                                     |
+|-------------------------+-------------------------------------------------|
+| dateRep                 | Reporting day inlcuding year and month          |
+| day                     | Reporting day                                   |
+| month                   | Reporting month                                 |
+| year                    | Reporting year                                  |
+| cases                   | Number of new infection over the last 24 h      |
+| deaths                  | Number of new deaths over the last 24 h         |
+| countriesAndTerritories | Name of the country which reported the numbers  |
+| geoID                   | ID of the reporting country                     |
+| countryterritoryCode    | Official country code of the reporting country  |
+| popData2018             | Size of the population of the reporting country |
+|-------------------------+-------------------------------------------------|
+
+
 + dateRep: Reporting day inlcuding year and month
 + day: Reporting day
 + month: Reporting month
