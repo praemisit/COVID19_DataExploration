@@ -1,7 +1,7 @@
 
 * How can publicly available data help to better understand the development of the COVID-19 CORONA VIRUS PANDEMIC?
 
-<p align="center"><img src="images/SARS-CoV-2_image.png" /></p>
+#+HTML: <p align="center"><img src="images/SARS-CoV-2_image.png" /></p>
 Source: [[https://commons.wikimedia.org/w/index.php?curid=86444014][CDC/ Alissa Eckert, MS; Dan Higgins, MAM]] 
 
 ** Introduction
