@@ -1,3 +1,4 @@
+
 * How can publicly available data help to better understand the development of the COVID-19 CORONA VIRUS PANDEMIC?
 
 ** Introduction
@@ -14,18 +15,15 @@ The insights resulting from such analysis could then be used by politicians to t
 Over the course of this project we will analyze the following aspects:
 
 1. Which sources of trustful data around the Corona pandemic exists?
-2. What kind of data is provided in the various sources and how can it be used to help understand, how fast the virus spreads per country?
+2. What kind of data is provided in the various sources and how can it be used to help understand, how fast the virus spreads in a specific country?
 3. Are there significant differences between countries in how the pandemic develops? And what might be the reasons for these differences?
 4. How do the number of Corona infections and Corona deaths correlate with each other? Are there significant differences between countries?
-5. How can the implications of the Corona pandemic be measures by data?
+5. How can the implications of the Corona pandemic be measured by data?
 
 ** Part I: Sources of trustful data around the Corona pandemic
 
 In order to understand the development of the pandemic, we need trustworthy data. The data should provide information on the number of new infections and new deaths per country on a daily basis. That kind of data would allow us understand the growth rate of infections as well as of deaths caused by the Corona virus.
 
-The following 
-
-*** Number of infections and deaths per country and day
 Some countries like [[https://info.gesundheitsministerium.at/][Austria]] or [[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html][Germany]] do provide official dashboards to publish the number of Corona infections and deaths. For other countries there are different sources with slightly different figures. 
 
 As we want to compare the pandemic development between different countries, it seems advisable to use a central data source which comprise data from all, or at least most countries. The World Health Organization (WHO) provides daily [[https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/][Situation Reports]] on their website. These situation reports are only available as PDF documents and thus difficult to process.
@@ -56,7 +54,23 @@ The ECDC dataset can be downloaded as CSV file. For this project the data from t
 + popData2018: Size of the population of the reporting country
 
 **** Statistics of the data set
+Overall, the raw data set contains 10742 rows from 206 distinct countries. The earliest reporting is 31st of Januar 2019. The number of total infections is 1873265 and the number of total deaths is 118854. Based on this data, the current mortality rate is at 6.3%.
 
+*** How fast does the pandamic develop per country?
+After having identified a trustful data source about the development of infections and deaths, let's see how this data can be used to help understand, how fast the virus spreads per country.
 
+The following KPIs shall be evaluated to determine which KPI, or which combination of KPI's, is the best one to understand the speed of the pandemic spread:
 
+**** 1. Number of infections and deaths per day 
+The data is directly provided by the data set.
+**** 2. Cumulated number of infections and deaths over time
+
+**** 3. "Growth Rate": Change Percentage growth of infections / deaths
+  + Calcuated as {number of new cases on day x} / {cumulated number of cases up to day x} * 100
++ "Doubling Days": Number of days in which the number of cases doubles
+  + Calculated as {cumulated cases up to day x} / {average number of cases over the last 5 days}
++ "Change of Growth Rate": Change rate of the "Growth Rate"
+  + Calculated as {average growth rate of (day x-5 up to day x)} / {average growth rate of (day x-6 up to day x-1)}
+
+**** 
 
