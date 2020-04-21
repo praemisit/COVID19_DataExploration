@@ -60,15 +60,28 @@ The ECDC dataset can be downloaded as CSV file. For this project the data from t
 |-------------------------+-------------------------------------------------|
 
 *** Statistics of the data set
+
+[[./images/Fig02_DataStatistics.png]]
+
+
 Overall, the raw data set contains 10742 rows from 206 distinct countries. The earliest reporting is 31st of Januar 2019. The number of total infections is 1873265 and the number of total deaths is 118854. Based on this data, the current mortality rate is at 6.3%.
 
-** How fast does the pandamic develop per country?
-After having identified a trustful data source about the development of infections and deaths, let's see how this data can be used to help understand, how fast the virus spreads per country.
+
+** How fast does the pandamic develop within a specific country?
+After having identified a trustful data source about the development of infections and deaths, let's see how this data can be used to help understand how fast the virus spreads within a specific country. For this analysis we will focus on the countries Germany, Italy, India and the USA.
 
 The following KPIs shall be evaluated to determine which KPI, or which combination of KPI's, is the best one to understand the speed of the pandemic spread:
 
 *** 1. Number of infections and deaths per day 
-The data is directly provided by the data set.
+The number of new infections and new deaths is is directly provided in the ECDC data set. In order to visualize the development, we use a simple bar chart.
+
+
+**** Number of new infections per day
+[[./images/Fig03_Ger_NumberOfInfectionsPerDay.png]]
+
+**** Number of new death per day
+[[./images/Fig04_Ger_NumberOfDeathsPerDay.png]]
+
 *** 2. Cumulated number of infections and deaths over time
 
 *** 3. "Growth Rate": Change Percentage growth of infections / deaths

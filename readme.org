@@ -2,8 +2,11 @@
 ** Foreword
 This project was developed as part of the Udacity education program "Data Scientist" and tackles the current most dominant topic of the world: The Corona crisis. 
 
-*Disclaimer: The entire project and all analysis results MUST NOT be considered as scientifically proven insights about the Corona epidemic. It is a project of an inexperienced student in Data Science and its primary purpose is to a) finalize the Udacity Data Science training program, and b) to generate some insights about the potential of publicly available data in a world-wide crisis.*
+*Disclaimer: The entire project and all analysis results MUST NOT be considered as scientifically proven insights about the Corona epidemic. It is a project of an inexperienced student in Data Science and its primary purpose is to*
 
+*a) finalize the Udacity Data Science training program, and*
+
+*b) to generate some insights about the potential of publicly available data in a world-wide crisis.*
 
 ** Installation
 
