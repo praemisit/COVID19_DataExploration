@@ -4,8 +4,7 @@
 Source: [[https://commons.wikimedia.org/w/index.php?curid=86444014][CDC/ Alissa Eckert, MS; Dan Higgins, MAM]] 
 
 * Introduction
-
-Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the entire world into a serious health, social and economic crisis. The first infection was reported in Wuhan, China, on December 1st, 2019. Six weeks later, the first person outside China was tested positively. Since then, the pandemic spread rapidly, and is still spreading rapidly, across all countries. Most countries have closed their borders and shut down their normal societal and economic life. Even though some first countries have started to loosen their restrictions again in late April, the pandemic is expected to keep the entire world more than busy of the next couple of months and years.
+Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the entire world into a serious health, social and economic crisis. The first infection was reported in Wuhan, China, on December 1st, 2019. Six weeks later, the first person outside China was tested positively. Since then, the pandemic spread rapidly, and is still spreading rapidly, across all countries. Most countries have closed their borders and shut down their normal societal and economic life. Even though some first countries have started to loosen their restrictions again in late April, the pandemic is expected to keep the entire world more than busy over the next couple of months and years.
 
 So the Corona pandemic is omnipresent all over the world and many people are working hard to better understand 
 1) How quickly the virus spreads across countries and societies,
@@ -41,7 +40,7 @@ The collection and processing approach of the ECDC as well as its copyright poli
 
 * Part II: Analysis of the provided data and how it can be used to help understand the dynamics of the pandemic
 ** Data contained in the daily updated and downloadable ECDC data set
-The ECDC dataset can be downloaded as CSV file. Over the course of the project, I used datasets from different days. The final results are based on the data from April 29th. A first outline does show that the dataset contains 10 columns.
+The ECDC dataset can be downloaded as CSV file. Over the course of the project, I used datasets from different days. The final results are based on the data from April 29th. A first outline does show that the dataset contains 11 columns.
 [[./images/Fig01_ECDC_dataset_outline.png]]
 *** Columns of the data set
 |-------------------------+-------------------------------------------------|
@@ -147,7 +146,79 @@ The main conclusions out of this second part of the project can be summarized as
    + *P4 - Cool Down:* The number of new infections declines slowly (x weeks).
 3. While all of the KPIs used in this chapter do provide their specific insights, a combination of all does provide the highest value.
 * Part III: Analysis of differences in the development of the pandemic between countries
-** 
+** Intro and Motivation
+The COVID-19 pandemic is a world-wide occurrence. And countries are following very different approaches to save lives and not overwhelm healthcare systems. How do these different approach affect the development of the pandemic?
 
-in how the pandemic develops? And what might be the reasons for these differences?
 
+While we have focused on Germany in part II of the project, it makes sense to compare the development of the pandemic between countries in order to 
++ Assess success or failure of the different strategies to cope with the pandemic
++ Identify significant differences as indicator for a root cause analysis
++ Identify common patterns which could help to create more certainty around assumptions about the further development of the pandemic in a specific country.
+** Approach
+For this analysis we will focus on the following countries:
+1. Germany, as we have analyzed Germany already in the chapter before. Germany has reacted quickly to the pandemic, but the measures have not been as restrictive as in Italy or Spain.
+2. Italy, as Italy was the first country in Europe with extremely high number of infections and deaths. Italy has reacted not as quickly after the pandemic started in the country, but than put quite restrictive measures in place.
+3. USA, as the US is the country with the by far highest number of infections and deaths. The US also reacted rahther late than quickly to the pandemic. The current measure are very different between the various US states.
+4. Sweden, as Sweden has taken a very different approach to COVID-19, with significant less restrictive measures than in other countries.
+5. UK, as the UK had started with a less restricted approach and then turned to a very rigid approach to tackle COVID-19.
+
+For these 5 countries we will calculate and compare the following KPIs:
++ Development of new infections/deaths in relation to their population size
++ Development of infections/deaths as a percentage of their population size
++ Growth rates and doubling time of new infections/deaths
+
+** KPI 1: Development of new infections/deaths in relation to their population size
+*** Purpose and Expectations
+This KPI should help us to verify, whether the pandemic develops similar in different countries or whether there are some differences. If there are difference, a further analysis could make sense. This further analysis would then need to identify similarities and differences in the undertaken measures and other conditions which might impact the dynamics of the pandemic.
+
+Based on the observations from part II of this project, in which we have analyzed the development of the pandemic in Germany, and the above briefly outlined different approaches in the five countries, we could assume:
+1. A faster and more significant increase in new cases during the "explosion phase" in Italy, the US and the UK compared to Germany.
+2. As the measures in the UK and Italy are more restrict compared to Germany, we could assume that the decrease of new infections/deaths is steeper in those countries.
+3. As Sweden is still sticking to the more relaxed approach, I would assume that neither the "explosion" phase nor the "cool down" phase is as steep as in the other countries. This would however not explain, why the more relaxed approach is keeping Sweden in a sufficiently acceptable state with regard to COVID-19 infections and deaths.
+*** Analysis and Results
+As the first considerable numbers of relative infections started around February 15, the plot has been restricted to the time frame from Feb 15th to end of April.
+
+
+[[./images/Fig10_CC_InfectionsPerDay.png]]
+
+
+
+Out of this analysis we may derive the subsequent observations. Before, we must make ourselves aware that this analysis was limited to five countries only and that each country might have quite different approaches for COVID-19 testing and reporting. Therefore, while the below conclusions are logically derived from the available data, they are still weak and would need much more analysis before taking final conclusions.
+1. Out of the 5 countries, Italy was the one where the pandemic started the earliest. That might explain why it was most difficult for Italy to decide about the appropriate measures as Italy was lacking data from other countries.
+2. The significant increase of the pandemic in the other countries started around 2 weeks after Italy. Thus all other 4 countries had at least Italy to learn from.
+3. Germany established its "lock-down" measure around mid of March for a period of at least 4 weeks. Even though Germany did face a significant increase of infections in the 2nd half of March, the measures seem to have paid of. The relative number of new infections declined in April and is by now the lowest of the 5 countries.
+4. In Sweden, the pandemic grew at the beginning much slower compared to Germany or Italy. That might help to explain why Sweden decided to follow a more relaxed approach. However, as a consequence, the relative number of new infections is not yet declining. As of today the relative numbers are above Germany and around the level of Italy.
+5. Similar to Sweden, the pandemic started slower and later in the UK. And at the beginning, also the UK followed a more relaxed approach. However and in contrast to Sweden, the development of the pandemic was much steeper around early April, which forced the UK to change its approach to a more restrictive one. By now, the UK still has 2nd highest new infection rate.
+6. Up to mid of March, the COVID-19 pandemic in the US was relatively mild. Over the 2nd half of March the pandemic than increased in a similar way as in Italy. Also the US reacted quite late with mitigation measures and the relative infection rate is still at a comparable high level (highest in the analyzed country group).
+
+[[./images/Fig11_CC_DeathsPerDay.png]]
+The analysis of the relative number of deaths caused by COVID-19 does provide some additional interesting observations:
+1. Compared to the other countries, the relative number of new deaths per day in Germany is the lowest over the entire time-frame. Whether that is due to a "better" healthcare system or other conditions cannot be derived out of the available data.
+2. Within the 5 countries, Italy was the one where the deadly impact of the pandemic started the earliest. That might explain why Italy than had to put in place very rigid restriction measures. 
+3. Compared to Germany, the development of deaths in all of the three other countries (US, UK and Sweden) was steeper, and is still at a significantly higher level. The rather late, or less restrictive measures in these countries might have ultimately also led to a higher relative number of COVID-19 deaths.
+4. The relative death rate in Sweden is comparable high and does currently not indicate to decline. That may increase the pressure on Swedish authorities to adjust their current quite relaxed approach.
+*** Conclusions
+In our analysis we have been able to observe that the pandemic develops quite differently in countries with different strategies to tackle COVID-19. A fast and consequent reaction with restrictive measures seems to have a positive influence on limiting the number of COVID-19 infections and deaths. 
+
+Approaches with a more relaxed reaction have not paid out in some countries. The data proves that the development of infections / deaths in the UK as well as the US was significantly higher compared to Germany. That might have forced those countries to change their approaches.
+
+Sweden is the country in our analysis which still pursues a more relaxed strategy. Based on the available data, the relative number of infections and deaths stabilized on a comparable high level and so far the numbers are not declining as in the other countries. Depending on the further development, Sweden might get under pressure to change their strategy.
+
+*Overall:* 
+
+The development of the pandemic differs significantly between the countries. Why these differences exist cannot be fully analyzed in this project, but is definitely worth further research. 
+
+We also have not looked into the impacts that the different country strategies and measures have on other aspects like economy and society overall. Therefore it is not possible and I don't want to judge on "better" or "worse" on any of the country strategies from an overall perspective. 
+** KPI 2: Development of infections/deaths as a percentage of their population size
+
+*** Purpose and Expectations
+This KPI shall help to understand how far, and how fast the pandemic advanced in the five countries. 
+
+From our analysis so far we might assume that 
++ Germany has the lowest overall rate of COVID-19 deaths
++ Italy has the highest overall rate of COIVD-19 deaths and infections
++ 
+
+*** Analysis and Results
+
+*** Conclusions
