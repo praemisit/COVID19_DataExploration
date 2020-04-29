@@ -17,9 +17,8 @@ The insights resulting from such analysis could then be used by politicians and 
 
 1. Which sources of trustful data around the Corona pandemic exists?
 2. What kind of data is provided in the various sources and how can it be used to help understand, how fast the virus spreads in a specific country?
-3. Are there significant differences between countries in how the pandemic develops? And what might be the reasons for these differences?
-4. How do the number of Corona infections and Corona deaths correlate with each other? Are there significant differences between countries?
-5. How can the implications of the Corona pandemic be measured by data?
+3. Are there significant differences between countries in how the pandemic develops? Do these differences justify further research work? 
+4. Can the implications of the Corona pandemic be measured by data?
 
 * Part I: Sources of trustful data around the Corona pandemic
 
@@ -176,6 +175,7 @@ Based on the observations from part II of this project, in which we have analyze
 2. As the measures in the UK and Italy are more restrict compared to Germany, we could assume that the decrease of new infections/deaths is steeper in those countries.
 3. As Sweden is still sticking to the more relaxed approach, I would assume that neither the "explosion" phase nor the "cool down" phase is as steep as in the other countries. This would however not explain, why the more relaxed approach is keeping Sweden in a sufficiently acceptable state with regard to COVID-19 infections and deaths.
 *** Analysis and Results
+**** New infections per day relative to populations size
 As the first considerable numbers of relative infections started around February 15, the plot has been restricted to the time frame from Feb 15th to end of April.
 
 
@@ -190,7 +190,7 @@ Out of this analysis we may derive the subsequent observations. Before, we must 
 4. In Sweden, the pandemic grew at the beginning much slower compared to Germany or Italy. That might help to explain why Sweden decided to follow a more relaxed approach. However, as a consequence, the relative number of new infections is not yet declining. As of today the relative numbers are above Germany and around the level of Italy.
 5. Similar to Sweden, the pandemic started slower and later in the UK. And at the beginning, also the UK followed a more relaxed approach. However and in contrast to Sweden, the development of the pandemic was much steeper around early April, which forced the UK to change its approach to a more restrictive one. By now, the UK still has 2nd highest new infection rate.
 6. Up to mid of March, the COVID-19 pandemic in the US was relatively mild. Over the 2nd half of March the pandemic than increased in a similar way as in Italy. Also the US reacted quite late with mitigation measures and the relative infection rate is still at a comparable high level (highest in the analyzed country group).
-
+**** New COVID-19 deaths per day relative to populations size
 [[./images/Fig11_CC_DeathsPerDay.png]]
 The analysis of the relative number of deaths caused by COVID-19 does provide some additional interesting observations:
 1. Compared to the other countries, the relative number of new deaths per day in Germany is the lowest over the entire time-frame. Whether that is due to a "better" healthcare system or other conditions cannot be derived out of the available data.
@@ -209,16 +209,33 @@ Sweden is the country in our analysis which still pursues a more relaxed strateg
 The development of the pandemic differs significantly between the countries. Why these differences exist cannot be fully analyzed in this project, but is definitely worth further research. 
 
 We also have not looked into the impacts that the different country strategies and measures have on other aspects like economy and society overall. Therefore it is not possible and I don't want to judge on "better" or "worse" on any of the country strategies from an overall perspective. 
-** KPI 2: Development of infections/deaths as a percentage of their population size
+** KPI 2: Development of cumulated infections/deaths as a percentage of their population size
 
 *** Purpose and Expectations
 This KPI shall help to understand how far, and how fast the pandemic advanced in the five countries. 
 
 From our analysis so far we might assume that 
-+ Germany has the lowest overall rate of COVID-19 deaths
-+ Italy has the highest overall rate of COIVD-19 deaths and infections
-+ 
++ Germany has the lowest overall rate of COVID-19 infections/deaths as well as the slowest further increase
++ Italy has the highest overall rate of COIVD-19 deaths and infections, but with a slower further increase
++ For the UK and the US we might see a similar development, with a rather rapidly growing percentage of COVID-19 infections and deaths.
 
 *** Analysis and Results
+**** Cumulated infections relative to populations size
+[[./images/Fig12_CC_InfectionsCum.png]]
+
+Overall, the relative number of infections is still far below 1% of the population in all five countries. Whereas the percentage in Sweden and Germany has grown to ~0.18%, the rate is already around 0.3% in Italy and the US. The UK is somehow in between with around 0.25%.
+
+By end of April, the UK and the US have the steepest increase of relative infections, while Germany has the slowest. For Italy the curve is flattening and the US might soon pass by Italy in terms of infections relative to population size.
+
+The development in Sweden was comparable moderate for a long period, but is continuing at a higher speed than e.g. Germany. Sweden might thus soon pass by Germany. 
+**** Cumulated COVID-19 deaths relative to populations size
+[[./images/Fig13_CC_DeathsCum.png]]
+
+The cumulated, relative numbers of deaths show a surprisingly clear picture. Relative to its population size, Italy suffered most with more than 0.04% deaths by end of April. Germany is the only country with less than 0.01% death. The other three countries are in between. 
+
+Also the relative growth rate in Germany is the lowest in the analyzed country group. 
 
 *** Conclusions
+Based on the available data, the COVID-19 pandemic has still only reached a relatively small percentage of the overall population. The number of reported infections is far below 0.5% in all analyzed countries. Even if the real figure of infections is multiple times above the officially reported number, the countries are far away from a sufficient level of infections (60% to 70%) which would stop the further progression of the pandemic.
+
+The data indicates again significant differences between the analyzed countries. With regard to COVID-19 deaths for example, Italy suffered more than 4 times worth compared to Germany. Whatever the reasons are, it seems to be clearly worth to start further research to understand the root causes of these differences.
