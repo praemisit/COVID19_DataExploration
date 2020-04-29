@@ -210,7 +210,6 @@ The development of the pandemic differs significantly between the countries. Why
 
 We also have not looked into the impacts that the different country strategies and measures have on other aspects like economy and society overall. Therefore it is not possible and I don't want to judge on "better" or "worse" on any of the country strategies from an overall perspective. 
 ** KPI 2: Development of cumulated infections/deaths as a percentage of their population size
-
 *** Purpose and Expectations
 This KPI shall help to understand how far, and how fast the pandemic advanced in the five countries. 
 
@@ -239,3 +238,41 @@ Also the relative growth rate in Germany is the lowest in the analyzed country g
 Based on the available data, the COVID-19 pandemic has still only reached a relatively small percentage of the overall population. The number of reported infections is far below 0.5% in all analyzed countries. Even if the real figure of infections is multiple times above the officially reported number, the countries are far away from a sufficient level of infections (60% to 70%) which would stop the further progression of the pandemic.
 
 The data indicates again significant differences between the analyzed countries. With regard to COVID-19 deaths for example, Italy suffered more than 4 times worth compared to Germany. Whatever the reasons are, it seems to be clearly worth to start further research to understand the root causes of these differences.
+** KPI 3: Mortality Rate per country
+*** Purpose and Expectations
+By looking at the mortality rate we might be able to understand the hazardous nature of a COVID-19 infection. A high mortality rate would explain the significance of the COVID-19 mitigation measures that have been put in place by nearly all countries. In order to understand how mortality rates, we must compare the COVID-19 rate with other, past pandemics. According to [[https://www.healthline.com/health-news/how-deadly-is-the-coronavirus-compared-to-past-outbreaks#1918-influenza][healthline.com]], we have the following death rates for past pandemics:
+
+|-----------------------+-----------------|
+| Past Pandemic         | Death Rate in % |
+|-----------------------+-----------------|
+| Spanish flu from 1918 |              2% |
+| Seasonal flu          |            0.1% |
+| SARS 2002-2004        |             15% |
+| H1N1 2009             |           0.02% |
+| Ebola 2014-2016       |             50% |
+|-----------------------+-----------------|
+| Estimated COVID-19    |            3.4% |
+|-----------------------+-----------------|
+
+
+Comparing the mortality rate between countries might provide further insights. E.g. about the stability and level of the respective national healthcare systems. 
+
+Given the insights we have gained so far, we might assume that 
++ The mortality rate across all countries is at a quite high level
++ The mortality rate differs significantly between the countries. 
+*** Analysis and Results
+**** Mortality Rate per country as of April 29th
+In the first analysis we will look at the mortality rate per country as of April 29th. The mortality rate in percentage is simply calculated as <total deaths> / <total infections> * 100.
+
+[[./images/Fig14_CC_Mortality.png]]
+
+Based on the available data, we have surprisingly high mortality rates in all countries. Sweden, UK and Italy are around 13%, whereas Germany is at 4% and the US is around 6%. These numbers are all much higher than the COVID-19 mortality rate estimated by the WHO (3.4%). The reason might be the expected high number of infections which are not officially reported and thus are not included in the numbers. On the other side, also not all COVID-19 deaths might be officially reported.
+*** Conclusion
+Based on the available data, the mortality rate of COVID-19 infections seems to be at least 30 to 40 times above the mortality rate of the regular seasonal flue and quite the double of the Spanish Flue from the early 1900th. The numbers might still be weak due to the quality and comprehensiveness of COVID-19 testing, but there is a clear tendency that COVID-19 is one of the most hazardous infections we have seen over the last centuries. Especially in combination with the possible exponential growth of infections, COVID-19 is extremely dangerous. The result of this assessment does well explain the significant level of restrictions that so many countries have put in place.
+
+
+
+
+
+
+
