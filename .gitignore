@@ -1,0 +1,3 @@
+# exclude the following files and folders from git
+code_snippets.py
+/exports/*

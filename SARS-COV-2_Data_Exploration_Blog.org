@@ -24,7 +24,7 @@ The insights resulting from such analysis could then be used by politicians and 
 
 * Part I: Sources of trustful data around the Corona pandemic
 
-In order to understand the development of the pandemic, we need trustworthy data. The data should provide information on the number of new infections and new deaths per country on a daily basis. That kind of data would allow us understand the growth rate of infections as well as of deaths caused by the Corona virus.
+In order to understand the development of the pandemic, we need trustworthy data. The data should provide information on the number of new infections and new deaths per country on a daily basis. That kind of data would allow us to understand the growth rate of infections as well as of deaths caused by the Corona virus.
 
 Some countries like [[https://info.gesundheitsministerium.at/][Austria]] or [[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html][Germany]] do provide official dashboards to publish the number of Corona infections and deaths. For other countries there are different sources with slightly different figures. 
 
@@ -41,7 +41,7 @@ The collection and processing approach of the ECDC as well as its copyright poli
 
 * Part II: Analysis of the provided data and how it can be used to help understand the dynamics of the pandemic
 ** Data contained in the daily updated and downloadable ECDC data set
-The ECDC dataset can be downloaded as CSV file. For this project the data from the 14th of April have been used. A first outline does show that the dataset contains 10 columns.
+The ECDC dataset can be downloaded as CSV file. Over the course of the project, I used datasets from different days. The final results are based on the data from April 29th. A first outline does show that the dataset contains 10 columns.
 [[./images/Fig01_ECDC_dataset_outline.png]]
 *** Columns of the data set
 |-------------------------+-------------------------------------------------|
@@ -57,6 +57,7 @@ The ECDC dataset can be downloaded as CSV file. For this project the data from t
 | geoID                   | ID of the reporting country                     |
 | countryterritoryCode    | Official country code of the reporting country  |
 | popData2018             | Size of the population of the reporting country |
+| continentExp            | Continent of the reporting country              |
 |-------------------------+-------------------------------------------------|
 
 *** Statistics of the data set
@@ -64,25 +65,56 @@ The ECDC dataset can be downloaded as CSV file. For this project the data from t
 [[./images/Fig02_DataStatistics.png]]
 
 
-Overall, the raw data set contains 10742 rows from 206 distinct countries. The earliest reporting is 31st of Januar 2019. The number of total infections is 1873265 and the number of total deaths is 118854. Based on this data, the current mortality rate is at 6.3%.
+Overall, the raw dataset contains 13623 rows from 207 distinct countries. The earliest reporting is 31st of January 2019. The number of total infections up to April 28th is 2982688 and the number of total deaths is 210193. Based on this data, the current mortality rate is at 7%.
 
 
 ** How fast does the pandamic develop within a specific country?
-After having identified a trustful data source about the development of infections and deaths, let's see how this data can be used to help understand how fast the virus spreads within a specific country. For this analysis we will focus on the countries Germany, Italy, India and the USA.
+After having identified a trustful data source about the development of infections and deaths, let's see how this data can be used to help understand how fast the virus spreads within a specific country. For this analysis we will exemplarily focus on Germany.
 
 The following KPIs shall be evaluated to determine which KPI, or which combination of KPI's, is the best one to understand the speed of the pandemic spread:
 
-*** 1. Number of infections and deaths per day 
+*** 1. Number of new infections and deaths per day 
 The number of new infections and new deaths is is directly provided in the ECDC data set. In order to visualize the development, we use a simple bar chart.
 
 
 **** Number of new infections per day
 [[./images/Fig03_Ger_NumberOfInfectionsPerDay.png]]
 
-**** Number of new death per day
+In Germany, the first infection was reported on January 28th. Based on the current numbers, we might seperate the pandemic currently into 4 phases:
++ Phase 1 (4-5 weeks): The number of new infections per day is quite stable at a very low level.
++ Phase 2 (1-2 weeks): The number of new infections is growing significantly, somehow exploding.
++ Phase 3 (3 weeks): The number of new infections varies per day, but seems to be stable overall at a quite high level.
++ Phase 4 (x weeks): The number of new infections declines slowly.
+
+How the numbers will develop further and whether the trend of declining growth is sustainable, is currently not predictable.
+
+**** Number of new deaths per day
 [[./images/Fig04_Ger_NumberOfDeathsPerDay.png]]
 
+In Germany, the first COVID-19 death was reported on March 10th, so around 6 weeks after the pandemic started in the country. So far, the highest number of new deaths was reported on April 16th with 315 deaths, which is approximately 4 weeks after the number of new infections has started to significantly increase.
+
 *** 2. Cumulated number of infections and deaths over time
+
+**** Cumulated number of infections
+
+[[./images/Fig05_Ger_NumberOfInfectionsCum.png]]
+
+As indicated by the bar chart of new infections above, the total number of infections remains relatively stable and low until mid of March, so approximately 5-6 weeks after the pandemic started. After this first phase, we can see a kind of exponential growth of infections for around 1-2 weeks, after which the curve flattens at the end of the reporting period.
+**** Cumulated number of death
+
+[[./images/Fig06_Ger_NumberOfDeathsCum.png]]
+
+The cumulated number of deaths follows the number of infections with a few days of delay (approximately a week). 
+*** 3. Temporal progressions of new infections and new deaths
+The analysis so far does indicate that 
+1. The pandemic - expressed by numbers of new infections per day - started slowly in a first phase, exploded somehow in a relatively short second phase, remained stable at a high level for around 3 weeks and then started to decline.
+2. The number of deaths follows the number of infections with a certain delay. However, the decline of new death is - so far - not yet proven by the current numbers.
+
+Let's look at this by normalizing each of the two data rows into a range of 0 to 1. That should provide a better visibility on how huge (or small) the increase of new infections / new deaths has been over time relative to the maximum (minimum) of new infections / new deaths.
+
+[[./images/Fig07_Ger_NormalizedNumbers.png]]
+
+The normalized numbers support the indication from above nicely. However, reliable predictions for the further development of new infections / new deaths are not possible based on the given date.
 
 *** 3. "Growth Rate": Change Percentage growth of infections / deaths
   + Calcuated as {number of new cases on day x} / {cumulated number of cases up to day x} * 100
