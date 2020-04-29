@@ -5,9 +5,9 @@ Source: [[https://commons.wikimedia.org/w/index.php?curid=86444014][CDC/ Alissa 
 
 * Introduction
 
-Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the entire world into a serious health, social and economic crisis. The pandemic has spread rapidly, and is still spreading rapidly, across all countries. Most countries have closed their borders and shut down their normal societal and economic life.
+Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the entire world into a serious health, social and economic crisis. The first infection was reported in Wuhan, China, on December 1st, 2019. Six weeks later, the first person outside China was tested positively. Since then, the pandemic spread rapidly, and is still spreading rapidly, across all countries. Most countries have closed their borders and shut down their normal societal and economic life. Even though some first countries have started to loosen their restrictions again in late April, the pandemic is expected to keep the entire world more than busy of the next couple of months and years.
 
-The Corona pandemic is omnipresent all over the world and many people are working hard to better understand 
+So the Corona pandemic is omnipresent all over the world and many people are working hard to better understand 
 1) How quickly the virus spreads across countries and societies,
 2) What measures might have an impact on the infection and/or death growth rate, and
 3) What the major implications of the virus pandemic will be. 
@@ -71,7 +71,7 @@ Overall, the raw dataset contains 13623 rows from 207 distinct countries. The ea
 ** How fast does the pandamic develop within a specific country?
 After having identified a trustful data source about the development of infections and deaths, let's see how this data can be used to help understand how fast the virus spreads within a specific country. For this analysis we will exemplarily focus on Germany.
 
-The following KPIs shall be evaluated to determine which KPI, or which combination of KPI's, is the best one to understand the speed of the pandemic spread:
+In the following sub-chapters we will investigate in different KPIs to determine, which KPI, or which combination of KPI's, is the best one to understand the speed of the pandemic spread:
 
 *** 1. Number of new infections and deaths per day 
 The number of new infections and new deaths is is directly provided in the ECDC data set. In order to visualize the development, we use a simple bar chart.
@@ -115,13 +115,39 @@ Let's look at this by normalizing each of the two data rows into a range of 0 to
 [[./images/Fig07_Ger_NormalizedNumbers.png]]
 
 The normalized numbers support the indication from above nicely. However, reliable predictions for the further development of new infections / new deaths are not possible based on the given date.
+*** 4. Growth Rates and doubling time of new infections and new deaths
+"Growth Rate" and "Doubling Time" are further key measure to assess the speed of a pandemic spread. 
+**** Growth Rate
+The formula for the growth is:
 
-*** 3. "Growth Rate": Change Percentage growth of infections / deaths
-  + Calcuated as {number of new cases on day x} / {cumulated number of cases up to day x} * 100
-+ "Doubling Days": Number of days in which the number of cases doubles
-  + Calculated as {cumulated cases up to day x} / {average number of cases over the last 5 days}
-+ "Change of Growth Rate": Change rate of the "Growth Rate"
-  + Calculated as {average growth rate of (day x-5 up to day x)} / {average growth rate of (day x-6 up to day x-1)}
++ p = (TodayCumulatedNumber - YesterdayCumulatedNumber) / YesterdayCumulatedNumber
++ <=> p = DailyNewCases / YesterdayCumulatedNumber
++ <=> p = DailyNewCases / (TodayCumulatedNumber - DailyNewCases)
 
-*** 
+[[./images/Fig08_Ger_GrowthRates.png]]
+
+The growth rate of infections does nicely illustrate the exponential growth around end of February until mid of March. In this time frame we can see significant daily growth rates. From mid of March onwards, the growth rate for new infections has flattened significantly.
+
+The growth rate of deaths does follow the growth rate of new infections with around 2 weeks delay.
+**** Doubling Time
+The formula for Doubling Time is: t = Ln(2) / Ln(1+p)
+
+[[./images/Fig09_Ger_DoublingTimes.png]]
+
+The doubling time of new infections was surprisingly stable until mid to end of March. Just by end of March the doubling time started to increase more rapidly and is by now close to 100 days.
+
+The doubling time of new deaths is again following the curve of new infections with around 2 weeks of delay. However, the increase is not yet that significantly.
+** Conclusions
+The main conclusions out of this second part of the project can be summarized as follows:
+1. The publicly available data around the COVID-19 pandemic can be easily used to understand the general dynamics of the pandemic in a single country.
+2. At least for Germany, all KPI's from the above sub-chapters indicate that the pandemic development up to know can be structured into 4 phases:
+   + *P1 - Warming Up:* The number of new infections per day is at a very low level and stable (4-5 weeks).
+   + *P2 - Explosion:* The number of new infections is growing significantly, somehow exploding (1-2 weeks).
+   + *P3 - Hot:* The number of new infections varies per day, but seems to be stable overall at a quite high level (3 weeks).
+   + *P4 - Cool Down:* The number of new infections declines slowly (x weeks).
+3. While all of the KPIs used in this chapter do provide their specific insights, a combination of all does provide the highest value.
+* Part III: Analysis of differences in the development of the pandemic between countries
+** 
+
+in how the pandemic develops? And what might be the reasons for these differences?
 
