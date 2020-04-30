@@ -22,21 +22,22 @@ The following aspects will be analyzed in more detail over the course of this pr
 
 1. Which sources of trustful data around the Corona pandemic exists?
 2. What kind of data is provided in the various sources and how can it be used to help understand, how fast the virus spreads in a specific country?
-3. Are there significant differences between countries in how the pandemic develops? Do these differences justify further research work? 
-4. Can the implications of the Corona pandemic be measured by data?
+3. Are there significant differences between countries in how the pandemic develops? Do these differences justify further research work?
+4. How dangerous is COVID-19 disease in comparison to other, past pandemics?
 
 ** File Description
-
 The following files belong to this project:
 
-1. readme.org: Providing a rough idea about this project.
-2. <dataset 1>: 
-3. covid19_data_exploration_project.ipynb: An Jupiter notebook file with all code and comments of the data exploration exercise
-4. A GitHub page containing the full data analysis results (=blog post)
-
+1. This [[https://github.com/praemisit/COVID19_DataExploration/blob/master/readme.org][readme.org]]: Providing a rough idea about this project.
+2. The data source [[https://github.com/praemisit/COVID19_DataExploration/blob/master/data/ECDC_COVID19_20200429.csv][ECDC_COVID19_20200429.csv]]: Containing COVID-19 infections and deaths data provided by the [[https://www.ecdc.europa.eu/en][ECDC]] 
+3. A Jupiter notebox [[https://github.com/praemisit/COVID19_DataExploration/blob/master/COVID19_DataExploration.ipynb][COVID19_DataExploration.ipynb]]: Containing all code and comments of the project
+4. A blog post [[https://github.com/praemisit/COVID19_DataExploration/blob/master/SARS-COV-2_Data_Exploration_Blog.org][SARS-COV-2_Data_Exploration_Blog.org]]: Containing the detailed documentation of the project, including motivation, results, conclusions and reflection. 
 ** How to interact with this project
 
 The development of the project in completed, closed and not intended for further use in other projects. The full data analysis results can be found here:
 
+[[https://github.com/praemisit/COVID19_DataExploration/blob/master/SARS-COV-2_Data_Exploration_Blog.org][How can publicly available data help to better understand the development of the COVID-19 CORONA VIRUS PANDEMIC?]]
+
 ** Licensing, Authors, Acknowledgements
+The data used within this project was provided the "[[https://www.ecdc.europa.eu/en][European Centre for Disease Prevention and Control]]" (ECDC), which is an agency of the European Union. The agency provides [[https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide][downloadable data files]], which are updated daily and contain the latest available public data on COVID-19.
 

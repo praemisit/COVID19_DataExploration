@@ -1,7 +1,7 @@
 #+TITLE: How can publicly available data help to better understand the development of the COVID-19 CORONA VIRUS PANDEMIC?
 
 #+HTML: <p align="center"><img src="images/SARS-CoV-2_image.png" /></p>
-Source: [[https://commons.wikimedia.org/w/index.php?curid=86444014][CDC/ Alissa Eckert, MS; Dan Higgins, MAM]] 
+Image source: [[https://commons.wikimedia.org/w/index.php?curid=86444014][CDC/ Alissa Eckert, MS; Dan Higgins, MAM]] 
 
 * Introduction
 Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the entire world into a serious health, social and economic crisis. The first infection was reported in Wuhan, China, on December 1st, 2019. Six weeks later, the first person outside China was tested positively. Since then, the pandemic spread rapidly, and is still spreading rapidly, across all countries. Most countries have closed their borders and shut down their normal societal and economic life. Even though some first countries have started to loosen their restrictions again in late April, the pandemic is expected to keep the entire world more than busy over the next couple of months and years.
@@ -9,7 +9,7 @@ Over the first few month in 2020, the Covid-19/Corona virus pandemic has put the
 So the Corona pandemic is omnipresent all over the world and many people are working hard to better understand 
 1) How quickly the virus spreads across countries and societies,
 2) What measures might have an impact on the infection and/or death growth rate, and
-3) What the major implications of the virus pandemic will be. 
+3) How dangerous the COVID-19 disease is in comparison to other, past pandemics.
 
 The insights resulting from such analysis could then be used by politicians and other authorities to take decisions, if and how to either loosen or intensify societal and economical restrictions.
 
@@ -17,9 +17,8 @@ The insights resulting from such analysis could then be used by politicians and 
 
 1. Which sources of trustful data around the Corona pandemic exists?
 2. What kind of data is provided in the various sources and how can it be used to help understand, how fast the virus spreads in a specific country?
-3. Are there significant differences between countries in how the pandemic develops? Do these differences justify further research work? 
-4. Can the implications of the Corona pandemic be measured by data?
-
+3. Are there significant differences between countries in how the pandemic develops? Do these differences justify further research work?
+4. How dangerous is COVID-19 disease in comparison to other, past pandemics?
 * Part I: Sources of trustful data around the Corona pandemic
 
 In order to understand the development of the pandemic, we need trustworthy data. The data should provide information on the number of new infections and new deaths per country on a daily basis. That kind of data would allow us to understand the growth rate of infections as well as of deaths caused by the Corona virus.
@@ -39,7 +38,7 @@ The collection and processing approach of the ECDC as well as its copyright poli
 
 * Part II: Analysis of the provided data and how it can be used to help understand the dynamics of the pandemic
 ** Data contained in the daily updated and downloadable ECDC data set
-The ECDC dataset can be downloaded as CSV file. Over the course of the project, I used datasets from different days. The final results are based on the data from April 29th. A first outline does show that the dataset contains 11 columns.
+The ECDC dataset can be downloaded as CSV file. Over the course of the project, I used datasets from different days. The final results are based on the data from April 28th. A first outline does show that the dataset contains 11 columns.
 [[./images/Fig01_ECDC_dataset_outline.png]]
 *** Columns of the data set
 |-------------------------+-------------------------------------------------|
@@ -63,8 +62,7 @@ The ECDC dataset can be downloaded as CSV file. Over the course of the project, 
 [[./images/Fig02_DataStatistics.png]]
 
 
-Overall, the raw dataset contains 13623 rows from 207 distinct countries. The earliest reporting is 31st of January 2019. The number of total infections up to April 28th is 2982688 and the number of total deaths is 210193. Based on this data, the current mortality rate is at 7%.
-
+Overall, the raw dataset contains 13623 rows from 207 distinct countries. The earliest reporting is 31st of January 2019. The number of total infections up to April 28th is 2982688 and the number of total deaths is 210193. Based on this data, the current average mortality rate is at 7%.
 
 ** How fast does the pandamic develop within a specific country?
 After having identified a trustful data source about the development of infections and deaths, let's see how this data can be used to help understand how fast the virus spreads within a specific country. For this analysis we will exemplarily focus on Germany.
@@ -91,13 +89,13 @@ How the numbers will develop further and whether the trend of declining growth i
 
 In Germany, the first COVID-19 death was reported on March 10th, so around 6 weeks after the pandemic started in the country. So far, the highest number of new deaths was reported on April 16th with 315 deaths, which is approximately 4 weeks after the number of new infections has started to significantly increase.
 
+In addition the bar chart indicates that the development of deaths does follow the development of infections with around 2 weeks delay.
 *** 2. Cumulated number of infections and deaths over time
-
 **** Cumulated number of infections
 
 [[./images/Fig05_Ger_NumberOfInfectionsCum.png]]
 
-As indicated by the bar chart of new infections above, the total number of infections remains relatively stable and low until mid of March, so approximately 5-6 weeks after the pandemic started. After this first phase, we can see a kind of exponential growth of infections for around 1-2 weeks, after which the curve flattens at the end of the reporting period.
+As indicated by the bar chart of new infections above, the total number of infections remains relatively stable and low until mid of March, so approximately 5-6 weeks after the pandemic started. After this first phase, we can see a kind of exponential growth of infections for around 1-2 weeks, after which the curve flattens slightly at the end of the reporting period.
 **** Cumulated number of death
 
 [[./images/Fig06_Ger_NumberOfDeathsCum.png]]
@@ -148,7 +146,6 @@ The main conclusions out of this second part of the project can be summarized as
 ** Intro and Motivation
 The COVID-19 pandemic is a world-wide occurrence. And countries are following very different approaches to save lives and not overwhelm healthcare systems. How do these different approach affect the development of the pandemic?
 
-
 While we have focused on Germany in part II of the project, it makes sense to compare the development of the pandemic between countries in order to 
 + Assess success or failure of the different strategies to cope with the pandemic
 + Identify significant differences as indicator for a root cause analysis
@@ -162,11 +159,10 @@ For this analysis we will focus on the following countries:
 5. UK, as the UK had started with a less restricted approach and then turned to a very rigid approach to tackle COVID-19.
 
 For these 5 countries we will calculate and compare the following KPIs:
-+ Development of new infections/deaths in relation to their population size
-+ Development of infections/deaths as a percentage of their population size
++ Development of new daily infections/deaths in relation to their population size
++ Development of the cumulated infections/deaths in relation to their population size
 + Growth rates and doubling time of new infections/deaths
-
-** KPI 1: Development of new infections/deaths in relation to their population size
+** KPI 1: Development of new daily infections/deaths in relation to their population size
 *** Purpose and Expectations
 This KPI should help us to verify, whether the pandemic develops similar in different countries or whether there are some differences. If there are difference, a further analysis could make sense. This further analysis would then need to identify similarities and differences in the undertaken measures and other conditions which might impact the dynamics of the pandemic.
 
@@ -209,7 +205,7 @@ Sweden is the country in our analysis which still pursues a more relaxed strateg
 The development of the pandemic differs significantly between the countries. Why these differences exist cannot be fully analyzed in this project, but is definitely worth further research. 
 
 We also have not looked into the impacts that the different country strategies and measures have on other aspects like economy and society overall. Therefore it is not possible and I don't want to judge on "better" or "worse" on any of the country strategies from an overall perspective. 
-** KPI 2: Development of cumulated infections/deaths as a percentage of their population size
+** KPI 2: Development of cumulated infections/deaths in relation to their population size
 *** Purpose and Expectations
 This KPI shall help to understand how far, and how fast the pandemic advanced in the five countries. 
 
@@ -238,41 +234,72 @@ Also the relative growth rate in Germany is the lowest in the analyzed country g
 Based on the available data, the COVID-19 pandemic has still only reached a relatively small percentage of the overall population. The number of reported infections is far below 0.5% in all analyzed countries. Even if the real figure of infections is multiple times above the officially reported number, the countries are far away from a sufficient level of infections (60% to 70%) which would stop the further progression of the pandemic.
 
 The data indicates again significant differences between the analyzed countries. With regard to COVID-19 deaths for example, Italy suffered more than 4 times worth compared to Germany. Whatever the reasons are, it seems to be clearly worth to start further research to understand the root causes of these differences.
-** KPI 3: Mortality Rate per country
-*** Purpose and Expectations
-By looking at the mortality rate we might be able to understand the hazardous nature of a COVID-19 infection. A high mortality rate would explain the significance of the COVID-19 mitigation measures that have been put in place by nearly all countries. In order to understand how mortality rates, we must compare the COVID-19 rate with other, past pandemics. According to [[https://www.healthline.com/health-news/how-deadly-is-the-coronavirus-compared-to-past-outbreaks#1918-influenza][healthline.com]], we have the following death rates for past pandemics:
+* Part IV: Analysis of the hazardous nature of the COVID-19 pandemic
+** Intro and Motivation
+Nearly all countries have put extremely rigid COVID-19 mitigation measures in place. Economies are suffering significantly and are likely to fall in the deepest recession since the second world war. Also individual rights have been significantly restricted. Those restrictions might lead to other serious physical and psychological implications, which are not yet visible and/or understood. 
 
-|-----------------------+-----------------|
-| Past Pandemic         | Death Rate in % |
-|-----------------------+-----------------|
-| Spanish flu from 1918 |              2% |
-| Seasonal flu          |            0.1% |
-| SARS 2002-2004        |             15% |
-| H1N1 2009             |           0.02% |
-| Ebola 2014-2016       |             50% |
-|-----------------------+-----------------|
-| Estimated COVID-19    |            3.4% |
-|-----------------------+-----------------|
+Why are countries establishing such significant measures with such incredible significant implications? To answer this question, we need to understand the hazardous nature of the COVID-19 pandemic.
 
+** Approach
+To understand the hazardous nature of COVID-19 we will look at the mortality rate. According to [[https://en.wikipedia.org/wiki/Mortality_rate][Wikipedia]], the mortality rate /"is a measure of the number of deaths (in general, or due to a specific cause) in a particular population, scaled to the size of that population, per unit of time."/
 
-Comparing the mortality rate between countries might provide further insights. E.g. about the stability and level of the respective national healthcare systems. 
+For the purpose of this project, a take a quite simple formula to calculate the mortality rate: <total deaths> / <total infections> per country as of April 28th. Based on this calculation we can 
++ Compare mortality rates between countries
++ Compare COVID-19 mortality rates with mortality rates of past pandemics
 
-Given the insights we have gained so far, we might assume that 
-+ The mortality rate across all countries is at a quite high level
-+ The mortality rate differs significantly between the countries. 
-*** Analysis and Results
-**** Mortality Rate per country as of April 29th
-In the first analysis we will look at the mortality rate per country as of April 29th. The mortality rate in percentage is simply calculated as <total deaths> / <total infections> * 100.
+A high mortality rate would explain the significance of the COVID-19 mitigation measures that have been put in place by nearly all countries. 
+** KPI 1: Mortality Rate per country as of April 28th
+In the first analysis we will look at the mortality rate per country as of April 28th. In this analysis we will take the same country group as in Part III of this project.
 
 [[./images/Fig14_CC_Mortality.png]]
 
-Based on the available data, we have surprisingly high mortality rates in all countries. Sweden, UK and Italy are around 13%, whereas Germany is at 4% and the US is around 6%. These numbers are all much higher than the COVID-19 mortality rate estimated by the WHO (3.4%). The reason might be the expected high number of infections which are not officially reported and thus are not included in the numbers. On the other side, also not all COVID-19 deaths might be officially reported.
-*** Conclusion
-Based on the available data, the mortality rate of COVID-19 infections seems to be at least 30 to 40 times above the mortality rate of the regular seasonal flue and quite the double of the Spanish Flue from the early 1900th. The numbers might still be weak due to the quality and comprehensiveness of COVID-19 testing, but there is a clear tendency that COVID-19 is one of the most hazardous infections we have seen over the last centuries. Especially in combination with the possible exponential growth of infections, COVID-19 is extremely dangerous. The result of this assessment does well explain the significant level of restrictions that so many countries have put in place.
+The mortality rates of the analyzed countries do vary significantly around the overall average mortality rate of 7%, which we had calculate already before in part II of the project. Sweden, UK and Italy are around 13%, whereas Germany is at 4% and the US is around 6%. These numbers are all much higher than the COVID-19 mortality rate estimated by the WHO (3.4%). The reason might be the expected high number of infections which are not officially reported and thus are not included in the numbers. On the other side, also not all COVID-19 deaths might be officially reported.
+
+These numbers do again indicate that the pandemic and its health impacts do vary significantly by country. One possible explanation could be the different level and stability of national healthcare systems. But such conclusions are not possible on the data available for this project. Further research based on other data sources would be needed to gain insights on why such huge differences occur.
+** KPI 2: Comparing the COVID-19 mortality rate with past pandemics
+How dangerous is a COIVD-19 infection compared to other, past pandemics? For that we need visibility on the mortality rates of past pandemics. [[https://www.healthline.com/health-news/how-deadly-is-the-coronavirus-compared-to-past-outbreaks#1918-influenza][Healthline.com]] does provide such numbers: 
+
+|-------------------------------+-----------------|
+| Past Pandemic                 | Death Rate in % |
+|-------------------------------+-----------------|
+| Spanish flu from 1918         |              2% |
+| Seasonal flu                  |            0.1% |
+| SARS 2002-2004                |             15% |
+| H1N1 2009                     |           0.02% |
+| Ebola 2014-2016               |             50% |
+|-------------------------------+-----------------|
+| WHO estimated COVID-19        |            3.4% |
+|-------------------------------+-----------------|
+| *Calculated average COVID-19* |            *7%* |
+|-------------------------------+-----------------|
+
+Independent from the exact number for the COVID-19 mortality rate, it seems obvious that a COVID-19 infection has a much higher mortality compared to most of the past pandemics. Especially in comparison to the widespread seasonal flue, and even if we trust the WHO estimate more than the available data, the mortality rate of COVID-19 is 34 times higher compared to seasonal flue.
+
+** Conclusion
+Based on the available data, the mortality rate of COVID-19 infections seems to be at least 30 to 40 times above the mortality rate of the regular seasonal flue and quite the double of the Spanish Flue from the early 1900th. The numbers might still be weak due to the quality and comprehensiveness of COVID-19 testing, but there is a clear tendency that COVID-19 is one of the most hazardous infections we have seen over the last centuries. Especially in combination with the possible exponential growth of infections, COVID-19 is extremely dangerous. 
+
+The result of this assessment does well explain the significant level of restrictions that so many countries have put in place.
 
 
 
 
 
+* Reflection
+Over the course of the project we were able to prove that publicly available data can provide quite deep insights into the development of the COVID-19 pandemic. We were able to gain at least some first insights to all 4 questions.
+** Availability of trustful data sources
+It was relatively easy to search and to identify a "ready-to-use" data source for the COVID-19 pandemic. The data was surprisingly comprehensive and clean. As the data provider is public agency, the data seemed trustworthy. Several cross check with other online services did prove the reliability of the data.
 
+I found it remarkable that public authorities do invest significantly in collecting and providing data for everyone for free. I wasn't aware of the availability of public agencies as data provider and can just recommend to everyone to make use of the offers they have.
+** Development of the pandemic in a single country
+Based on the data we were able to visualize the development and the speed of infections / death in a single country nicely. Even though I was aware of the "exponential growth", the results were still insightful. The simple visuals did help to understand the potential phases of a pandemic outbreak in a country. 
+** Differences between countries
+The dataset also provided data to calculate measures which are relative to the population size of a country. That was the key to be able to compare the pandemic development between countries. The results have revealed significant differences between countries, which do clearly justify further research. A better understanding of "why" these differences exist, could significantly help to determine efficient mitigation measures.
+
+The country comparison did also provide some indications why countries have chosen different strategies for mitigating the pandemic (or why they have changed their strategies in between).
+** Hazardous nature of COVID-19
+While the comparison of the mortality rate between countries was possible just on the available data source, the comparison with past pandemics was only possible with additional input. The results are nevertheless very clear: The COVID-19 pandemic is by far more dangerous than the widespread seasonal flue and most likely even more dangerous than the Spanish flue from 1918. The different mortality rates between countries could not be explained based on the available data. But again these differences justify further research.
+** Overall
+All results developed as part of this project are obviously depending on the quality of the underlying data. Whereas the chosen data provider seems trustworthy, we have to acknowledge that each country has its own rules and approaches for COVID-19 testing and reporting. Thus we have to treat the number and the results as preliminary and somehow "weak in nature". That however does most likely not change the key outcomes of this analysis.
+** Improvement Ideas
+The project did focus on a rather small subset of countries only. A future solution could offer more flexibility and let people define their own country group for analysis.
 
