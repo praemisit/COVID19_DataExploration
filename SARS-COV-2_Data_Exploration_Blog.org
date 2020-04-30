@@ -70,7 +70,7 @@ After having identified a trustful data source about the development of infectio
 In the following sub-chapters we will investigate in different KPIs to determine, which KPI, or which combination of KPI's, is the best one to understand the speed of the pandemic spread:
 
 *** 1. Number of new infections and deaths per day 
-The number of new infections and new deaths is is directly provided in the ECDC data set. In order to visualize the development, we use a simple bar chart.
+The number of new infections and new deaths is directly provided in the ECDC data set. In order to visualize the development, we use a simple bar chart.
 
 
 **** Number of new infections per day
@@ -110,7 +110,7 @@ Let's look at this by normalizing each of the two data rows into a range of 0 to
 
 [[./images/Fig07_Ger_NormalizedNumbers.png]]
 
-The normalized numbers support the indication from above nicely. However, reliable predictions for the further development of new infections / new deaths are not possible based on the given date.
+The normalized numbers support the indication from above nicely. However, reliable predictions for the further development of new infections / new deaths are not possible based on the given data.
 *** 4. Growth Rates and doubling time of new infections and new deaths
 "Growth Rate" and "Doubling Time" are further key measure to assess the speed of a pandemic spread. 
 **** Growth Rate
@@ -236,14 +236,14 @@ Based on the available data, the COVID-19 pandemic has still only reached a rela
 The data indicates again significant differences between the analyzed countries. With regard to COVID-19 deaths for example, Italy suffered more than 4 times worth compared to Germany. Whatever the reasons are, it seems to be clearly worth to start further research to understand the root causes of these differences.
 * Part IV: Analysis of the hazardous nature of the COVID-19 pandemic
 ** Intro and Motivation
-Nearly all countries have put extremely rigid COVID-19 mitigation measures in place. Economies are suffering significantly and are likely to fall in the deepest recession since the second world war. Also individual rights have been significantly restricted. Those restrictions might lead to other serious physical and psychological implications, which are not yet visible and/or understood. 
+Nearly all countries have put extremely rigid COVID-19 mitigation measures in place. Economies are suffering significantly and are likely to fall into the deepest recession since the second world war. Also individual rights have been significantly restricted. Those restrictions might lead to other serious physical and psychological implications, which are not yet visible and/or understood. 
 
 Why are countries establishing such significant measures with such incredible significant implications? To answer this question, we need to understand the hazardous nature of the COVID-19 pandemic.
 
 ** Approach
 To understand the hazardous nature of COVID-19 we will look at the mortality rate. According to [[https://en.wikipedia.org/wiki/Mortality_rate][Wikipedia]], the mortality rate /"is a measure of the number of deaths (in general, or due to a specific cause) in a particular population, scaled to the size of that population, per unit of time."/
 
-For the purpose of this project, a take a quite simple formula to calculate the mortality rate: <total deaths> / <total infections> per country as of April 28th. Based on this calculation we can 
+For the purpose of this project, we take a quite simple formula to calculate the mortality rate: <total deaths> / <total infections> per country as of April 28th. Based on this calculation we can 
 + Compare mortality rates between countries
 + Compare COVID-19 mortality rates with mortality rates of past pandemics
 
@@ -287,11 +287,11 @@ The result of this assessment does well explain the significant level of restric
 * Reflection
 Over the course of the project we were able to prove that publicly available data can provide quite deep insights into the development of the COVID-19 pandemic. We were able to gain at least some first insights to all 4 questions.
 ** Availability of trustful data sources
-It was relatively easy to search and to identify a "ready-to-use" data source for the COVID-19 pandemic. The data was surprisingly comprehensive and clean. As the data provider is public agency, the data seemed trustworthy. Several cross check with other online services did prove the reliability of the data.
+It was relatively easy to search and to identify a "ready-to-use" data source for the COVID-19 pandemic. The data was surprisingly comprehensive and clean. As the data provider is a public agency, the data seemed trustworthy. Several cross check with other online services did prove the reliability of the data.
 
 I found it remarkable that public authorities do invest significantly in collecting and providing data for everyone for free. I wasn't aware of the availability of public agencies as data provider and can just recommend to everyone to make use of the offers they have.
 ** Development of the pandemic in a single country
-Based on the data we were able to visualize the development and the speed of infections / death in a single country nicely. Even though I was aware of the "exponential growth", the results were still insightful. The simple visuals did help to understand the potential phases of a pandemic outbreak in a country. 
+Based on the data we were able to visualize the development and the speed of infections / deaths in a single country nicely. Even though I was aware of the "exponential growth", the results were still insightful. The simple visuals did help to understand the potential phases of a pandemic outbreak in a country. 
 ** Differences between countries
 The dataset also provided data to calculate measures which are relative to the population size of a country. That was the key to be able to compare the pandemic development between countries. The results have revealed significant differences between countries, which do clearly justify further research. A better understanding of "why" these differences exist, could significantly help to determine efficient mitigation measures.
 
